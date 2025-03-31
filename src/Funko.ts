@@ -8,7 +8,7 @@ import chalk from 'chalk';
 /**
  * Enumerado para definir el tipo de Funko
  */
-enum FunkoType {
+export enum FunkoType {
   Pop = "Pop!",
   PopRides = "Pop! Rides",
   VynilSoda = "Vynil Soda",
@@ -18,7 +18,7 @@ enum FunkoType {
 /**
  * Enumerado para definir el genero del Funko
  */
-enum FunkoGenre {
+export enum FunkoGenre {
   Animation = "Animación",
   MoviesTV = "Películas y TV",
   VideoGames = "Videojuegos",
@@ -30,7 +30,7 @@ enum FunkoGenre {
 /**
  * Interfaz para definir los atributos que debe tener un Funko
  */
-interface Funko {
+export interface Funko {
   id: number;
   name: string;
   description: string;
@@ -46,7 +46,7 @@ interface Funko {
 /**
  * Clase para representar la coleccion de objetos Funko
  */
-class FunkoCollection {
+export class FunkoCollection {
   private userDir: string;
 
   /**
