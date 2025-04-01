@@ -1,6 +1,7 @@
 import net from 'net';
 
-const client = new net.Socket();
+//const client = new net.Socket();
+const client = net.connect({port: 60300});
 const PORT = 60300;
 const HOST = 'localhost';
 
